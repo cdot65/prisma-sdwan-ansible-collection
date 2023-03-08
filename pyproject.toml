@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "prisma-sdwan-ansible-collection"
+version = "0.1.0"
+description = "Ansible Collection for Prisma SD-WAN"
+authors = ["Calvin Remsburg <cremsburg.dev@gmail.com>"]
+license = "Apache2.0"
+readme = "README.md"
+packages = [{include = "prisma_sdwan_ansible_collection"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ansible = "7.1.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+ipython = "^8.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
